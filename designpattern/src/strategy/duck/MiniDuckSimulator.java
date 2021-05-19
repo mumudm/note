@@ -1,4 +1,8 @@
-package stratergy;
+package strategy.duck;
+
+import strategy.duck.impl.FlyRocketPowered;
+import strategy.duck.impl.MallardDuck;
+import strategy.duck.impl.ModelDuck;
 
 /**
  * 小鸭子模拟器

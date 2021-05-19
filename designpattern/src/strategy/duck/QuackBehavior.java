@@ -1,4 +1,4 @@
-package stratergy;
+package strategy.duck;
 
 /**
  * @author mumu

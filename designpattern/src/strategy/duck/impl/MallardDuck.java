@@ -1,4 +1,6 @@
-package stratergy;
+package strategy.duck.impl;
+
+import strategy.duck.Duck;
 
 /**
  * 野鸭
@@ -6,7 +8,7 @@ package stratergy;
  * @author mumu
  * @date 2021-5-18 17:33
  */
-public class MallardDuck extends Duck{
+public class MallardDuck extends Duck {
 
     public MallardDuck() {
         quackBehavior = new Quack();

@@ -1,10 +1,12 @@
-package stratergy;
+package strategy.duck.impl;
+
+import strategy.duck.Duck;
 
 /**
  * @author mumu
  * @date 2021-5-18 17:42
  */
-public class ModelDuck extends Duck{
+public class ModelDuck extends Duck {
 
     public ModelDuck(){
         flyBehavior = new FlyNoWay();

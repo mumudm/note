@@ -1,4 +1,4 @@
-package stratergy;
+package strategy.duck;
 
 /**
  * @author mumu
@@ -6,9 +6,9 @@ package stratergy;
  */
 public abstract class Duck {
 
-    FlyBehavior flyBehavior;
+    protected FlyBehavior flyBehavior;
 
-    QuackBehavior quackBehavior;
+    protected QuackBehavior quackBehavior;
 
     /**
      * 展示
