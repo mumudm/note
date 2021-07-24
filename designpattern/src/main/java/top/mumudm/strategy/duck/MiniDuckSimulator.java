@@ -1,8 +1,8 @@
-package strategy.duck;
+package top.mumudm.strategy.duck;
 
-import strategy.duck.impl.FlyRocketPowered;
-import strategy.duck.impl.MallardDuck;
-import strategy.duck.impl.ModelDuck;
+import top.mumudm.strategy.duck.impl.FlyRocketPowered;
+import top.mumudm.strategy.duck.impl.MallardDuck;
+import top.mumudm.strategy.duck.impl.ModelDuck;
 
 /**
  * 小鸭子模拟器

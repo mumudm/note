@@ -1,6 +1,6 @@
-package strategy.duck.impl;
+package top.mumudm.strategy.duck.impl;
 
-import strategy.duck.QuackBehavior;
+import top.mumudm.strategy.duck.QuackBehavior;
 
 /**
  * @author mumu

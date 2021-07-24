@@ -1,4 +1,4 @@
-package strategy.common;
+package top.mumudm.strategy.common;
 
 /**
  * @author mumu

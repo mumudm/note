@@ -1,6 +1,6 @@
-package strategy.common.impl;
+package top.mumudm.strategy.common.impl;
 
-import strategy.common.Strategy;
+import top.mumudm.strategy.common.Strategy;
 
 /**
  * @author mumu
