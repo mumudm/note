@@ -6,6 +6,8 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * 公布成绩
@@ -15,15 +17,17 @@ import java.util.Set;
 public class AchievementPublish {
 
     private final Set<NotifyAchievement> observers = new HashSet<>();
+    ExecutorService threadPool = Executors.newFixedThreadPool(10);
 
-    public void addObserver(NotifyAchievement notifyAchievement){
+
+    public void addObserver(NotifyAchievement notifyAchievement) {
         observers.add(notifyAchievement);
     }
 
-    public void notifyAchievement(String score){
-        if(CollectionUtils.isEmpty(observers)){
+    public void notifyAchievement(String score) {
+        if (CollectionUtils.isEmpty(observers)) {
             log.info("AchievementPublish not has listener");
         }
-        observers.forEach(observer -> observer.publish(score));
+        observers.forEach(observer -> threadPool.execute(() -> observer.publish(score)));
     }
 }
