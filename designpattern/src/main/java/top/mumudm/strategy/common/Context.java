@@ -22,23 +22,11 @@ public class Context {
         strategy.strategyMethod();
     }
 
-    public Strategy getStrategy() {
-        return strategy;
-    }
-
-    public void setStrategy(Strategy strategy) {
-        this.strategy = strategy;
-    }
-
-
     public static void main(String[] args) {
-        Context context = new Context();
-        Strategy strategy = new StrategyAImpl();
-        context.setStrategy(strategy);
+        Context context = new Context(new StrategyAImpl());
         context.strategyMethod();
-        System.out.println("-----------------");
-        strategy = new StrategyBImpl();
-        context.setStrategy(strategy);
+
+        context = new Context(new StrategyBImpl());
         context.strategyMethod();
     }
 }
