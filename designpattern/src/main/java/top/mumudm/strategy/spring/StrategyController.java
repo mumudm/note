@@ -16,8 +16,7 @@ public class StrategyController {
 
     @GetMapping("spring/{type}")
     public String execute(@PathVariable String type) {
-        StrategyHandle handle = strategyHandleFactory.getStrategy(type);
-        handle.strategyMethod(type);
+        strategyHandleFactory.getStrategy(type).strategyMethod(type);
 
         return "success";
     }

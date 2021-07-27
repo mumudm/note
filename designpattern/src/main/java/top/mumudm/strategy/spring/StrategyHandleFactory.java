@@ -32,11 +32,11 @@ public class StrategyHandleFactory implements ApplicationContextAware, Initializ
                 .forEach(handler -> map.put(handler.getStrategyType(), handler));
     }
 
-    public StrategyHandle getStrategy(String type){
+    public Strategy getStrategy(String type){
         Strategy strategy = map.get(type);
         if(strategy == null){
             throw new RuntimeException("invalid type");
         }
-        return new StrategyHandle(strategy);
+        return strategy;
     }
 }
