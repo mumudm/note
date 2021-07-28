@@ -1,4 +1,4 @@
-package top.mumudm.responseibilitychain;
+package top.mumudm.responsibilitychain;
 
 public interface Handle {
 

@@ -1,4 +1,4 @@
-package top.mumudm.responseibilitychain;
+package top.mumudm.responsibilitychain;
 
 import java.util.LinkedList;
 import java.util.List;

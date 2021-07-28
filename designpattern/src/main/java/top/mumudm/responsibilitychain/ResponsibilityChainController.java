@@ -1,6 +1,6 @@
-package top.mumudm.responseibilitychain;
+package top.mumudm.responsibilitychain;
 
-public class ResponseibilityChainController {
+public class ResponsibilityChainController {
 
     public static void main(String[] args) {
         HandleChain chain = new HandleChain(new AHandle())

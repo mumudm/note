@@ -1,13 +1,13 @@
-package top.mumudm.responseibilitychain;
+package top.mumudm.responsibilitychain;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class AHandle implements Handle {
+public class BHandle implements Handle {
 
     @Override
     public boolean process(String type) {
-        log.info("a 执行了 ：{}", type);
+        log.info("b 执行了 ：{}", type);
 
         return true;
     }
